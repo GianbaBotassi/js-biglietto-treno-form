@@ -12,35 +12,37 @@
     <div id="cont" class="d-flex align-items-center justify-content-center">
 
         <!-- Ticket container -->
-        <div class="col-10 d-flex flex-column align-items-center justify-content-center rounded pb-3 border bg-white">
+        <div class="col-10 col-lg-8 d-flex flex-column align-items-center justify-content-center rounded pb-3 border bg-white">
             <div id="ticket_head" class="container-fluid pt-2 text-white rounded-top bg-primary">
                 <h3>Boolean train ticket</h3>
             </div>
 
             <!-- Passenger data -->
             <div>
-                <div class="row">
-                    <div class="col-4">
-                        <label for="userName" class="my-2">Name</label>
-                        <input type="text" class="form-control" id="userName" placeholder="Enter your name">
-                    </div>
-                    <div class="col-4">
-                        <label for="distance" class="my-2">Distance to cover</label>
-                        <input type="number" class="form-control" id="distance" placeholder="Enter distance">
-                    </div>
-                    <div class="col-4">
-                        <label for="inputAge" class="my-2">Age group</label>
-                        <select id="inputAge" class="form-control">
-                            <option selected>&lt;18 years old</option>
-                            <option>Adult</option>
-                            <option>Over 65 years old</option>
-                        </select>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button id="seeTicket" type="seeTicket" class="btn btn-secondary mt-3 col-2 me-3">See ticket</button>
-                        <button id="reset" type="reset" class="btn btn-secondary mt-3 col-2">Reset</button>
-                    </div>
-                </div>               
+                <div class="container">
+                    <form class="row">
+                        <div class="col-4">
+                            <label for="userName" class="my-2">Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                        </div>
+                        <div class="col-4">
+                            <label for="distance" class="my-2">Distance to cover</label>
+                            <input type="number" class="form-control" id="distance" placeholder="Enter distance">
+                        </div>
+                        <div class="col-4">
+                            <label for="inputAge" class="my-2">Age group</label>
+                            <select id="inputAge" class="form-control">
+                                <option selected>&lt;18 years old</option>
+                                <option>Adult</option>
+                                <option>Over 65 years old</option>
+                            </select>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div id="seeTicket" class="btn btn-secondary mt-3 col-2 me-3">See ticket</div>
+                            <button id="reset" type="reset" class="btn btn-secondary mt-3 col-2">Reset</button>
+                        </div>
+                    </form>
+                </div>              
             </div>       
 
 
